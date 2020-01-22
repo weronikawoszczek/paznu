@@ -10,7 +10,10 @@ body *{
 }
 
 .map{
-    background: url("img/map.png") no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("img/map.png");
     background-size: cover;
     position: absolute;
     height: 100%;
@@ -58,4 +61,55 @@ body *{
     background-color: #ffbbff;
     border: none;
     font-size: 20px;
+}
+
+.info-wrap{
+    width: 100vw;
+    padding: 20px;
+}
+
+.column-wrapper{
+    display: flex;
+}
+
+.info-column{
+    width: 35%;
+}
+
+.info-column span{
+    padding-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-column-details span{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 25px;
+    background-color: #ffbbff;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    text-underline: none;
+    display: flex;
+    justify-content: center;
 }
